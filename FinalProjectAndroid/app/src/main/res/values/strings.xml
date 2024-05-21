@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">FinalProjectAndroid</string>
+    <string name="appname">Talia\'s Catering</string>
+    <string name="emailHolder">Enter your email</string>
+    <string name="passwordHolder">Enter your password</string>
+    <string name="FnameHolder">Enter your First Name</string>
+    <string name="LnameHolder">Enter your Last Name</string>
+    <string name="buttonLogin">Login</string>
+    <string name="buttonSignup">SignUp</string>
+    <string name="emailTxtBx">Email</string>
+    <string name="passwordTxtBx">Password</string>
+    <string name="RegisterTxtView">Don\'t have an account? Signup</string>
+    <string name="LoginTxtView">Already have an account? Login </string>
+    <string name="FNameTxtView">First Name</string>
+    <string name="LNameTxtView">Last Name</string>
+    <string name="CategoryTxtView">Categories</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="imageContent">Image Content\n</string>
+    <string name="CategoryFresh">fresh</string>
+    <string name="CategoryNew">new</string>
+    <string name="CategoriesMeat">meat</string>
+    <string name="CategorySeafood">seafood</string>
+    <string name="CategoryVegetable">vegetable</string>
+    <string name="CategoryBakery">bakery</string>
+    <string name="itemsTxtView">items</string>
+    <string name="foodDescription">"Food "</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="dishimage">Dish Image</string>
+    <string name="Pay">Pay</string>
+    <string name="cart">Cart</string>
+</resources>

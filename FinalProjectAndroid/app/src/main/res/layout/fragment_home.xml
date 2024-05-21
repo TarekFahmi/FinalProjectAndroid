@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".HomeFragment"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/CategoryTxtView"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/itemsTxtView"
+            android:textColor="#221717"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/vegetableButton"
+            app:layout_constraintTop_toBottomOf="@+id/vegetableButton" />
+
+        <Button
+            android:id="@+id/newButton"
+            android:layout_width="167dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/button_border"
+            android:drawableStart="@drawable/new_star_svgrepo_com"
+            android:paddingStart="24sp"
+            android:text="@string/CategoryNew"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5"
+            tools:ignore="RtlSymmetry" />
+
+        <Button
+            android:id="@+id/meatButton"
+            android:layout_width="167dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/button_border"
+            android:drawableStart="@drawable/meat"
+            android:paddingStart="24sp"
+            android:text="@string/CategoriesMeat"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/newButton"
+            app:layout_constraintHorizontal_bias="0.589"
+            app:layout_constraintStart_toStartOf="@+id/newButton"
+            app:layout_constraintTop_toBottomOf="@+id/newButton"
+            tools:ignore="RtlSymmetry" />
+
+        <Button
+            android:id="@+id/vegetableButton"
+            android:layout_width="167dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/button_border"
+            android:drawableStart="@drawable/carrot"
+            android:paddingStart="24sp"
+            android:text="@string/CategoryVegetable"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/meatButton"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/meatButton"
+            app:layout_constraintTop_toBottomOf="@+id/meatButton"
+            tools:ignore="RtlSymmetry" />
+
+        <Button
+            android:id="@+id/freshButton"
+            android:layout_width="167dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/button_border"
+            android:drawableStart="@drawable/apple"
+            android:paddingStart="24sp"
+            android:text="@string/CategoryFresh"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintTop_toBottomOf="@+id/textView5"
+            tools:ignore="RtlSymmetry" />
+
+        <Button
+            android:id="@+id/seafoodButton"
+            android:layout_width="167dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/button_border"
+            android:drawableStart="@drawable/seafood"
+            android:paddingStart="24sp"
+            android:text="@string/CategorySeafood"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/freshButton"
+            app:layout_constraintStart_toStartOf="@+id/freshButton"
+            app:layout_constraintTop_toBottomOf="@+id/freshButton"
+            tools:ignore="RtlSymmetry" />
+
+        <Button
+            android:id="@+id/bakeryButton"
+            android:layout_width="167dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/button_border"
+            android:drawableStart="@drawable/bakery"
+            android:paddingStart="24sp"
+            android:text="@string/CategoryBakery"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/seafoodButton"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/seafoodButton"
+            app:layout_constraintTop_toBottomOf="@+id/seafoodButton"
+            tools:ignore="RtlSymmetry" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/foodList"
+            android:layout_width="388dp"
+            android:layout_height="395dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12"
+            app:layout_constraintVertical_bias="0.0"
+            tools:listitem="@layout/food_list"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
